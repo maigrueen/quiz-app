@@ -24,13 +24,13 @@ import { shuffle } from '../../utils';
 import Offline from '../Offline';
 
 const Main = ({ startQuiz }) => {
-  const [category, setCategory] = useState('0');
-  const [numOfQuestions, setNumOfQuestions] = useState(5);
-  const [difficulty, setDifficulty] = useState('easy');
-  const [questionsType, setQuestionsType] = useState('0');
+  const [category, setCategory] = useState('Hundeführerschein');
+  const [numOfQuestions, setNumOfQuestions] = useState(1);
+  const [difficulty, setDifficulty] = useState('medium');
+  const [questionsType, setQuestionsType] = useState('multiple');
   const [countdownTime, setCountdownTime] = useState({
-    hours: 0,
-    minutes: 120,
+    hours: 3600,
+    minutes: 0,
     seconds: 0,
   });
   const [processing, setProcessing] = useState(false);

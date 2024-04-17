@@ -1,56 +1,38 @@
 [
   {
-    "category": "Science: Computers",
+    "category": "Hundeführerschein",
     "type": "multiple",
     "difficulty": "medium",
-    "question": "In CSS, which of these values CANNOT be used with the &quot;position&quot; property?",
-    "correct_answer": "center",
-    "incorrect_answers": ["static", "absolute", "relative"],
-    "options": ["static", "relative", "center", "absolute"]
-  },
-  {
-    "category": "Science: Computers",
-    "type": "multiple",
-    "difficulty": "easy",
-    "question": "How long is an IPv6 address?",
-    "correct_answer": "128 bits",
-    "incorrect_answers": ["32 bits", "64 bits", "128 bytes"],
-    "options": ["128 bits", "64 bits", "128 bytes", "32 bits"]
-  },
-  {
-    "category": "Science: Computers",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "In the server hosting industry IaaS stands for...",
-    "correct_answer": "Infrastructure as a Service",
+    "question": "Wie alt sollte ein Welpe sein, um mit diversen Übungen anzufangen",
+    "correct_answer": "Einfache Übungen können sofort nach dem Einzug des Welpen begonnen werden. Er sollte aber keine Angst zeigen und nicht allzu aufgeregt sein.",
     "incorrect_answers": [
-      "Internet as a Service",
-      "Internet and a Server",
-      "Infrastructure as a Server"
+      "Das Alter spielt keine Rolle, allerdings sollte sich der Hund etwa drei Wochen lang eingelebt haben.",
+      "Da ein Welpe noch unreif ist, sollte er mindestens 6 Monate alt sein.",
+      "Es sollte nur das Stubenrein trainiert werden. Alle anderen Übungen sind zu anspruchsvoll und sollten später trainiert werden."
     ],
     "options": [
-      "Infrastructure as a Service",
-      "Internet and a Server",
-      "Internet as a Service",
-      "Infrastructure as a Server"
+      "Das Alter spielt keine Rolle, allerdings sollte sich der Hund etwa drei Wochen lang eingelebt haben.",
+      "Einfache Übungen können sofort nach dem Einzug des Welpen begonnen werden. Er sollte aber keine Angst zeigen und nicht allzu aufgeregt sein.",
+      "Da ein Welpe noch unreif ist, sollte er mindestens 6 Monate alt sein.",
+      "Es sollte nur das Stubenrein trainiert werden. Alle anderen Übungen sind zu anspruchsvoll und sollten später trainiert werden."
     ]
   },
   {
-    "category": "Science: Computers",
+    "category": "Hundeführerschein",
     "type": "multiple",
     "difficulty": "medium",
-    "question": "How many bits make up the significand portion of a single precision floating point number?",
-    "correct_answer": "23",
-    "incorrect_answers": ["8", "53", "15"],
-    "options": ["53", "15", "8", "23"]
-  },
-  {
-    "category": "Science: Computers",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "In programming, what do you call functions with the same name but different implementations?",
-    "correct_answer": "Overloading",
-    "incorrect_answers": ["Overriding", "Abstracting", "Inheriting"],
-    "options": ["Overriding", "Inheriting", "Abstracting", "Overloading"]
+    "question": "Wie reagieren Sie, wenn Ihnen mit Ihrem frei laufenden Hund eine Gruppe Kinder entgegenkommt?",
+    "correct_answer": "Sie nehmen ihren Hund sofort an die Leine.",
+    "incorrect_answers": [
+      "Sie können ihn ihne Leine laufen lassen, wenn er keine Kinder beißt.",
+      "Sie können ihn ohne Leine laufen lassen, wenn er sich gut abrufen lässt.",
+      "Sie lassen die Kinder wissen, stehen zu bleiben, damit kein Jagdverhalten bei ihrem Hund ausgelöst wird."
+    ],
+    "options": [
+      "Sie nehmen ihren Hund sofort an die Leine.",
+      "Sie können ihn ihne Leine laufen lassen, wenn er keine Kinder beißt.",
+      "Sie können ihn ohne Leine laufen lassen, wenn er sich gut abrufen lässt.",
+      "Sie lassen die Kinder wissen, stehen zu bleiben, damit kein Jagdverhalten bei ihrem Hund ausgelöst wird."
+    ]
   }
 ]
