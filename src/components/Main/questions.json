@@ -1,0 +1,39 @@
+[
+    {
+      "category": "Hundeführerschein",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Wie alt sollte ein Welpe sein, um mit diversen Übungen anzufangen",
+      "correct_answer": "Einfache Übungen können sofort nach dem Einzug des Welpen begonnen werden. Er sollte aber keine Angst zeigen und nicht allzu aufgeregt sein.",
+      "incorrect_answers": [
+        "Das Alter spielt keine Rolle, allerdings sollte sich der Hund etwa drei Wochen lang eingelebt haben.",
+        "Da ein Welpe noch unreif ist, sollte er mindestens 6 Monate alt sein.",
+        "Es sollte nur das Stubenrein trainiert werden. Alle anderen Übungen sind zu anspruchsvoll und sollten später trainiert werden."
+      ],
+      "options": [
+        "Das Alter spielt keine Rolle, allerdings sollte sich der Hund etwa drei Wochen lang eingelebt haben.",
+        "Einfache Übungen können sofort nach dem Einzug des Welpen begonnen werden. Er sollte aber keine Angst zeigen und nicht allzu aufgeregt sein.",
+        "Da ein Welpe noch unreif ist, sollte er mindestens 6 Monate alt sein.",
+        "Es sollte nur das Stubenrein trainiert werden. Alle anderen Übungen sind zu anspruchsvoll und sollten später trainiert werden."
+      ]
+    },
+    {
+      "category": "Hundeführerschein",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Wie reagieren Sie, wenn Ihnen mit Ihrem frei laufenden Hund eine Gruppe Kinder entgegenkommt?",
+      "correct_answer": "Sie nehmen ihren Hund sofort an die Leine.",
+      "incorrect_answers": [
+        "Sie können ihn ihne Leine laufen lassen, wenn er keine Kinder beißt.",
+        "Sie können ihn ohne Leine laufen lassen, wenn er sich gut abrufen lässt.",
+        "Sie lassen die Kinder wissen, stehen zu bleiben, damit kein Jagdverhalten bei ihrem Hund ausgelöst wird."
+      ],
+      "options": [
+        "Sie nehmen ihren Hund sofort an die Leine.",
+        "Sie können ihn ihne Leine laufen lassen, wenn er keine Kinder beißt.",
+        "Sie können ihn ohne Leine laufen lassen, wenn er sich gut abrufen lässt.",
+        "Sie lassen die Kinder wissen, stehen zu bleiben, damit kein Jagdverhalten bei ihrem Hund ausgelöst wird."
+      ]
+    }
+  ]
+  

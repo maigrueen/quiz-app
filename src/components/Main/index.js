@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
 import {
   Container,
   Segment,
@@ -8,9 +8,9 @@ import {
   Divider,
   Button,
   Message,
-} from 'semantic-ui-react';
+} from "semantic-ui-react";
 
-import mindImg from '../../images/mind.svg';
+import mindImg from "../../images/mind.svg";
 
 import {
   CATEGORIES,
@@ -18,16 +18,19 @@ import {
   DIFFICULTY,
   QUESTIONS_TYPE,
   COUNTDOWN_TIME,
-} from '../../constants';
-import { shuffle } from '../../utils';
+} from "../../constants";
+import { shuffle } from "../../utils";
 
-import Offline from '../Offline';
+import Offline from "../Offline";
+
+import * as data from "./questions.json";
+const results = data;
 
 const Main = ({ startQuiz }) => {
-  const [category, setCategory] = useState('Hundeführerschein');
+  const [category, setCategory] = useState("Hundeführerschein");
   const [numOfQuestions, setNumOfQuestions] = useState(1);
-  const [difficulty, setDifficulty] = useState('medium');
-  const [questionsType, setQuestionsType] = useState('multiple');
+  const [difficulty, setDifficulty] = useState("medium");
+  const [questionsType, setQuestionsType] = useState("multiple");
   const [countdownTime, setCountdownTime] = useState({
     hours: 3600,
     minutes: 0,
@@ -35,7 +38,7 @@ const Main = ({ startQuiz }) => {
   });
   const [processing, setProcessing] = useState(false);
   const [error, setError] = useState(null);
-  const [offline, setOffline] = useState(false);
+  const [offline] = useState(false);
 
   const handleTimeChange = (e, { name, value }) => {
     setCountdownTime({ ...countdownTime, [name]: value });
@@ -57,57 +60,18 @@ const Main = ({ startQuiz }) => {
 
     if (error) setError(null);
 
-    const API = `https://opentdb.com/api.php?amount=${numOfQuestions}&category=${category}&difficulty=${difficulty}&type=${questionsType}`;
+/*     results.forEach((element) => {
+      element.options = shuffle([
+        element.correct_answer,
+        ...element.incorrect_answers,
+      ]);
+    }); */
 
-    fetch(API)
-      .then(respone => respone.json())
-      .then(data =>
-        setTimeout(() => {
-          const { response_code, results } = data;
-
-          if (response_code === 1) {
-            const message = (
-              <p>
-                The API doesn't have enough questions for your query. (Ex.
-                Asking for 50 Questions in a Category that only has 20.)
-                <br />
-                <br />
-                Please change the <strong>No. of Questions</strong>,{' '}
-                <strong>Difficulty Level</strong>, or{' '}
-                <strong>Type of Questions</strong>.
-              </p>
-            );
-
-            setProcessing(false);
-            setError({ message });
-
-            return;
-          }
-
-          results.forEach(element => {
-            element.options = shuffle([
-              element.correct_answer,
-              ...element.incorrect_answers,
-            ]);
-          });
-
-          setProcessing(false);
-          startQuiz(
-            results,
-            countdownTime.hours + countdownTime.minutes + countdownTime.seconds
-          );
-        }, 1000)
-      )
-      .catch(error =>
-        setTimeout(() => {
-          if (!navigator.onLine) {
-            setOffline(true);
-          } else {
-            setProcessing(false);
-            setError(error);
-          }
-        }, 1000)
-      );
+    setProcessing(false);
+    startQuiz(
+      results,
+      countdownTime.hours + countdownTime.minutes + countdownTime.seconds
+    );
   };
 
   if (offline) return <Offline />;
@@ -224,7 +188,7 @@ const Main = ({ startQuiz }) => {
                   size="big"
                   icon="play"
                   labelPosition="left"
-                  content={processing ? 'Processing...' : 'Play Now'}
+                  content={processing ? "Processing..." : "Play Now"}
                   onClick={fetchData}
                   disabled={!allFieldsSelected || processing}
                 />
